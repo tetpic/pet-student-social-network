@@ -1,0 +1,32 @@
+@import 'src/components/fonts.module.scss';
+
+body {
+    margin: 0px;
+    // max-width: 1200px;
+
+}
+
+button {
+    margin: 10px;
+    @include mainfont;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    background-color: rgb(49, 49, 97);
+    color: white;
+    width: 150px;
+    height: 30px;
+    border: 2px solid gray;
+    border-radius: 4px;
+    &:active {
+        border: green;
+        background-color: rgb(153, 216, 153);
+        color: rgb(230, 255, 119);
+        opacity: 1;
+    }
+    &:hover {
+        opacity: .8;
+    }
+}
+

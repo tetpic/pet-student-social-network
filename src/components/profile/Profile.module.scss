@@ -1,0 +1,33 @@
+.content {
+  height: 100%;
+  background-color: #666666;
+  grid-area: c;
+  position: relative;
+  overflow: auto;
+}
+
+
+.backgroundImage {
+  // position: absolute;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  opacity: .8;
+  object-fit: cover;
+}
+
+.imageWrapper {
+  top: 0;
+  overflow: hidden;
+  position: sticky;
+  height: 100%;
+}
+
+.profileWrapper {
+  width: 100%;
+  position: absolute;
+  overflow: auto;
+  top: 0;
+
+}

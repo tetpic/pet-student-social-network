@@ -1,0 +1,26 @@
+
+
+
+$app-background-color: rgba(163, 120, 120, 0.459);
+
+.app-wrapper {
+  background-color: $app-background-color;
+  margin: 0 auto;
+  width: 1200px;
+  display: grid;
+  grid-template-areas: 
+  'h h h'
+  'n c c';
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  // gap: 10px;
+}
+
+.app-wrapper-content {
+  grid-area: c;
+  height: calc(100vh - 60px);
+  position: relative;
+  overflow: hidden;
+}
+
+
