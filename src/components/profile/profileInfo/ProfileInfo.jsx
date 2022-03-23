@@ -1,7 +1,9 @@
 import c from './ProfileInfo.module.scss'
 
 
-const ProfileInfo = () => {
+const ProfileInfo = (props) => {
+    debugger
+   
     return (
         <div >
             {/* <div className={c.imageWrapper}>
@@ -12,8 +14,8 @@ const ProfileInfo = () => {
                     <img src="/images/avatar.jpg" alt="avatar" />
                 </div>
                 <div className={c.name}>
-                    <h3>Nikita Bykov</h3>
-                    <p>/tetpic</p>
+                    <h3>null</h3>
+                    <p>null</p>
 
                 </div>
             </div>

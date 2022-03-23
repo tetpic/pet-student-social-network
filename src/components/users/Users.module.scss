@@ -1,0 +1,93 @@
+@import '../fonts.module.scss';
+
+.userLogo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    img{
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.userItem {
+    display: flex;
+    justify-content: space-around;
+    width: calc(100% - 64px);
+    border: 2px black solid;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.userDescription {
+    @include mainfont;
+    
+    width: 50%;
+    h4{
+        font-weight: 600;
+        font-size: 20px;
+    }
+    p{
+        font-weight: 400;
+        font-size: 16px;
+        opacity: .8;
+    }
+}
+
+.userLocation {
+    @include mainfont;
+    font-weight: 400;
+    font-size: 14px;
+    
+}
+
+.userLeftSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userId {
+    position: absolute;
+    @include mainfont;
+    background-color: white;
+    transform: rotate(2deg);
+    top: 102px;
+    left: 55px;
+    font-size: 8px;
+    font-weight: 600;
+    border-radius: 8px;
+
+}
+
+
+
+.usersPages {
+    display: flex;
+ 
+    
+    li{
+        list-style-type: none;
+        color: rgb(105, 161, 207);
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        @include mainfont;
+        font-size: 16px;
+        background-color: rgb(66, 66, 66);
+        opacity: .6;
+        cursor: pointer;
+        border-radius: 6px;
+        margin: 2px;
+    }
+    .selectedPage {
+        color: rgb(253, 253, 253);
+        background-color: rgb(2, 2, 2);
+        opacity: .9;
+        
+    }
+}

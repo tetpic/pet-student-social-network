@@ -1,3 +1,46 @@
+@import '../fonts.module.scss';
+
+
+.profileInfoWrapper {
+    margin: 20px;
+    position: relative;
+    display: flex;
+    width: 460px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    background-color: white;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @include mainfont;
+    h3 {
+        font-size: 20px;
+        font-weight: 600;
+
+    }
+    p {
+        font-size: 16px;
+        font-weight: 300;
+        opacity: .8;
+    }
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 50%;
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
 .content {
   height: 100%;
   background-color: #666666;

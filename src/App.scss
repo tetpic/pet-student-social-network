@@ -20,7 +20,10 @@ $app-background-color: rgba(163, 120, 120, 0.459);
   grid-area: c;
   height: calc(100vh - 60px);
   position: relative;
-  overflow: hidden;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
 }
 
 
